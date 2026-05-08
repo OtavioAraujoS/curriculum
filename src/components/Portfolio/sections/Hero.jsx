@@ -1,3 +1,5 @@
+import userPicture from "../../../assets/userPicture.png";
+
 const Hero = ({ t }) => {
   return (
     <section id="home" className="hero">
@@ -21,7 +23,9 @@ const Hero = ({ t }) => {
             </div>
           </div>
         </div>
-        <div className="hero-image"></div>
+        <div className="hero-image">
+          <img src={userPicture} alt={t.hero.name} className="hero-img" />
+        </div>
       </div>
     </section>
   );
